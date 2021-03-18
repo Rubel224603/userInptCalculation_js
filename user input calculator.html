@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculator with input</title>
+</head>
+<body>
+	
+		<h1>Calculator : Take User Input To Calculation</h1>
+		<input type="number" id="firstInpt" placeholder="Give tHe  Number" required="1"/>
+		<input type="number" id="secondInpt" placeholder="Give the number" required="1"/>
+		<input type="button" id="calculation" value="calculation" />
+		
+		<h2 id="jog"></h2>
+		<h3 id='biyog'></h3>
+		<h3 id="gun"></h3>
+		<h3 id="vag"></h3>
+		
+	
+	
+	
+	<script type="text/javascript">
+		document.getElementById('calculation').addEventListener("click",function(){
+			
+		
+			var fristInp = parseFloat(document.getElementById("firstInpt").value);
+			var secondInp = parseFloat(document.getElementById("secondInpt").value);
+			
+			
+				function addition(){
+						var add = fristInp+secondInp;
+						return add;
+					}
+					document.getElementById("jog").innerHTMl=addition();
+				function subtraction(){
+					var sub = fristInp-secondInp;
+						return sub; 
+				}
+				function maultiplection(){
+					var maultipy = fristInp*secondInp;
+					return maultipy;
+				}
+						
+				function divison(){
+					var div = fristInp+secondInp;
+					return div ;
+				}
+				function remainder(){
+					var remain = fristInp%secondInp;
+					return remain;
+				}
+				document.write("Addition = "+addition()+" <br />Subtraction = "+subtraction()+" <br />Maultiplection = "+maultiplection()+"<br />Division = "+divison()+"<br />Remainder = "+remainder());
+				
+				<!-- document.getElementById("jog").innerHTMl="addition = "+addition()+"<br />"; -->
+				<!-- document.getElementById("biyog").innerHTMl="Subtraction = "+subtraction()+"<br />"; -->
+				<!-- document.getElementById("gun").innerHTMl="Multiplection = "+maultiplection()+"<br />"; -->
+				<!-- document.getElementById("vag").innerHTMl="Division = "+divison(); -->
+				
+		
+			
+			
+		});
+	
+	
+	
+
+	
+	
+	
+	
+	</script>
+</body>
+</html>
